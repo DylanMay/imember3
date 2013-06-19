@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		Copyright (C) 2008 ZXing authors Licensed under the Apache License,
+		Version 2.0 (the "License"); you may not use this file except in
+		compliance with the License. You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+		applicable law or agreed to in writing, software distributed under the
+		License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+	-->
+<resources>
+	<color name="contents_text">#ff000000</color>
+	<color name="encode_view">#ffffffff</color>
+	<color name="help_button_view">#ffcccccc</color>
+	<color name="help_view">#ff404040</color>
+	<color name="possible_result_points">#c0ffff00</color>
+	<color name="result_image_border">#ffffffff</color>
+	<color name="result_minor_text">#ffc0c0c0</color>
+	<color name="result_points">#c000ff00</color>
+	<color name="result_text">#ffffffff</color>
+	<color name="result_view">#b0000000</color>
+	<color name="sbc_header_text">#ff808080</color>
+	<color name="sbc_header_view">#ffffffff</color>
+	<color name="sbc_list_item">#fffff0e0</color>
+	<color name="sbc_layout_view">#ffffffff</color>
+	<color name="sbc_page_number_text">#ff000000</color>
+	<color name="sbc_snippet_text">#ff4b4b4b</color>
+	<color name="share_text">#ff000000</color>
+	<color name="share_view">#ffffffff</color>
+	<color name="status_view">#50000000</color>
+	<color name="status_text">#ffffffff</color>
+	<color name="viewfinder_frame">#ff000000</color>
+	<color name="viewfinder_laser">#ffff0000</color>
+	<color name="viewfinder_mask">#99999999</color>
+
+
+
+
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="red">#FF0000</color>
+	<color name="blue">#0000CC</color>
+	<color name="light_blue">#33CCFF</color>
+	<color name="light_blue2">#BAEAF4</color>
+	<color name="light_blue3">#38BCEB</color>
+	<color name="light_light_blue">#99EBFF</color>
+	<color name="scroll_color">#00A5D0</color>
+	<color name="dark_blue">#000000</color>
+	<color name="dark_blue2">#074279</color>
+	<color name="yellow">#FFCC00</color>
+	<color name="light_yellow2">#FFFAB8</color>
+	<color name="orange">#FF7733</color>
+	<color name="dark_orange">#de5328</color>
+	<color name="purple">#a41990</color>
+	<color name="light_yellow">#fef1cf</color>
+	<color name="light_black">#5E615E</color>
+	<color name="light_black2">#A8A8A8</color>
+	<color name="light_black3">#E9E4DB</color>
+	<color name="brown">#996633</color>
+	<color name="light_brown">#A19484</color>
+	<color name="list_item_price_color">#F57211</color>
+	<color name="transparent">#0000</color>
+	<color name="tel_color">#00A5D0</color>
+	<color name="scan_backcolor">#00000000</color>
+	<color name="listitem_color">#f7efe9</color>
+	<color name="footer_word">#CB521D</color>
+	<color name="gold">#b89766</color>
+	<color name="green">#118111</color>
+	
+	<color name="back">#fafafa</color>
+	<color name="back_dark">#e5e5e5</color>
+</resources>

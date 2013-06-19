@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/view_logon"
+    android:background="@drawable/logon_bg"
+    android:visibility="gone" >
+
+    <include layout="@layout/header_logon" />
+    
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        	android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <RelativeLayout 
+        	android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        	>
+        	<ImageView 
+        	    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/logon_colors_bg"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+        	    />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dip" >
+                
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="25dip"
+                    >
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imember_icon_bg"
+                    />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imember_word_bg"
+                    />
+				</LinearLayout>
+
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用户名"
+                        android:textColor="@android:color/black"
+                        android:textSize="19dip" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="Username"
+                        android:textColor="@color/light_black2"
+                        android:textSize="15dip" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/logon_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="4dip"
+                        android:padding="10dip"
+                        android:drawablePadding="10dip"
+                        android:text=""
+                        android:hint="用户账号"
+                        android:textColorHint="@color/light_black2"
+                        android:background="@drawable/edit_item_bg"
+                        android:drawableLeft="@drawable/user_icon_bg"
+                        android:singleLine="true"
+                        android:textSize="17dip" />
+
+                    <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dip"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="密码"
+                        android:textColor="@android:color/black"
+                        android:textSize="19dip" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="Password"
+                        android:textColor="@color/light_black2"
+                        android:textSize="15dip" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/logon_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="4dip"
+                        android:padding="10dip"
+                        android:drawablePadding="10dip"
+                        android:text=""
+                        android:hint="*****"
+                        android:textColorHint="@color/light_black2"
+                        android:background="@drawable/edit_item_bg"
+                        android:drawableLeft="@drawable/lock_icon_bg"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textSize="17dip" />
+
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dip"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+                         <TextView
+                         android:id="@+id/logon_forget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="忘记密码"
+                        android:textColor="@color/orange"
+                        android:textSize="15dip" />
+                     </LinearLayout>
+                <Button
+                    android:id="@+id/logon_btn_yes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/btn_logon_bg" />
+
+            </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+</LinearLayout>

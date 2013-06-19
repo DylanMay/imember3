@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logon_bg" >
+
+    <include layout="@layout/header_advice" />
+    
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingBottom="25dip"
+                android:paddingTop="10dip" >
+                
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="感谢使用，您可以通过以下方式帮助我们改善产品"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dip" />
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginTop="25dip"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="方法1"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:background="@drawable/advice_method_bg"
+                        android:textSize="17dip" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="拨打电话"
+                        android:layout_marginLeft="10dip"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dip" />
+                <Button 
+                    android:id="@+id/btn_advice_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/btn_advice_tel_bg"
+                    />
+				</LinearLayout>
+
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="方法2"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:background="@drawable/advice_method_bg"
+                        android:textSize="17dip" />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="文字留言"
+                        android:layout_marginLeft="10dip"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dip" />
+				</LinearLayout>
+
+                    <EditText
+                        android:id="@+id/advice_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="110dip"
+                        android:layout_marginTop="5dip"
+                        android:gravity="top"
+                        android:hint="请输入您的想法，留下联系方式"
+                        android:textColorHint="@color/light_black2"
+                        android:padding="10dip"
+                        android:background="@drawable/advice_edit_bg"
+                        android:textSize="17dip" />
+
+                <Button
+                    android:id="@+id/btn_advice_refer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/btn_advice_refer_bg" />
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

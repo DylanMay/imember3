@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logon_bg" >
+
+    <include layout="@layout/header_changeemail" />
+    
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        	android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dip" >
+                
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="25dip"
+                    >
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imember_icon_bg"
+                    />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imember_word_bg"
+                    />
+				</LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_newemail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dip"
+                    android:padding="10dip"
+                    android:drawablePadding="10dip"
+                    android:hint="请输入新的Email"
+                    android:textColorHint="@color/light_black2"
+                    android:background="@drawable/edit_item_bg"
+                    android:singleLine="true"
+                    android:textSize="17dip" />
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/btn_forget_send_bg" />
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

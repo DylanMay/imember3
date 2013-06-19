@@ -1,0 +1,45 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/view_storelist"
+>
+<LinearLayout 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/list_bg"  >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <include layout="@layout/view_store" />
+        <include layout="@layout/view_logon" />
+        <include layout="@layout/view_islogoning" />
+
+    </LinearLayout>
+
+    <include layout="@layout/footer_home" />
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+    android:id="@+id/layout_footer_scan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    >
+	<ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/footer_scan_bg"
+    />    
+</LinearLayout>
+
+</RelativeLayout>

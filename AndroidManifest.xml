@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yundong.imember"
+    android:versionCode="1"
+    android:versionName="@string/version_interface" >
+<!-- 
+    <uses-sdk android:minSdkVersion="4" />
+     -->
+    <uses-sdk android:maxSdkVersion="14"/>
+
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" /> 
+    
+    <application
+        android:name="com.yundong.imember.ImemberApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.SplashscreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LeadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+        <activity
+            android:name=".activity.StoreListActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+        <activity
+            android:name=".activity.StoreOtherListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+        <activity
+            android:name=".activity.MsgValidateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.StoreDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.Map"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.MyCardDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.StoreCardDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.ChangePsdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.ResetPsdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.AdviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.ChangeCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.StoreCardListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.CaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name="com.yundong.imember.activity.UseRewardDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.MyRewardDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            />
+            <activity
+            android:name=".activity.ForgetPsdActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.ChangeEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name=".activity.MyCardListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+            <activity
+            android:name=".activity.MyRewardListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+            <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTask"
+            />
+            <activity
+            android:name=".activity.DownloadCompleteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <activity
+            android:name="com.yundong.imember.activity.CardStampDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            />
+            <service android:name="com.baidu.location.f" android:enabled="true"
+			android:permission="android.permission.BAIDU_LOCATION_SERVICE">
+			<intent-filter>
+				<action android:name="com.baidu.location.service_v2.6"></action>
+			</intent-filter>
+		</service>
+    </application>
+    
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></permission>
+	<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+    
+	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<!-- 手机震动 -->
+	  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.FLASHLIGHT"/>
+  <!-- 在SDCard中创建与删除文件权限 -->
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+  <!-- 往SDCard写入数据权限 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 在使用TelephonyManager时 -->
+    <uses-permission android:name="READ_PHONE_STATE" />
+    
+    <!-- 在使用ConnectivityManager时 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    
+    <!-- 使用网络连接 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    
+    <uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
+    
+</manifest>

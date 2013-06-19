@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logon_bg"
+    android:orientation="vertical"
+    android:id="@+id/view_setting" >
+
+    <include layout="@layout/header_changecity" />
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:id="@+id/changecity_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="25dip"
+         >
+         <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="自动定位"
+                android:paddingLeft="10dip"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+         <TextView
+             android:id="@+id/tv_currentcity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text=""
+                android:paddingLeft="25px"
+                android:paddingRight="25px"
+                android:gravity="center_vertical"
+                android:background="@drawable/box_bg"
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="20dip"
+                android:text="开通城市"
+                android:paddingLeft="10dip"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logon_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_storecard_list" />
+    
+    <ListView
+	android:id="@+id/listview_storecard"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:divider="#CECFCE"
+	android:dividerHeight="0dip"
+	android:scrollbars="none"
+	android:cacheColorHint="#00000000"
+	android:listSelector="#00000000"
+	/>
+
+</LinearLayout>

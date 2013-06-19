@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:orientation="vertical"
+  	android:background="@drawable/logon_bg"
+  	>
+  	<include layout="@layout/header_map"></include>
+	
+  	<RelativeLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout_weight="1"
+  	>
+<com.yundong.imember.customWidget.MyMapView
+  android:id="@+id/map_view"
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent"
+  android:clickable="true" 
+  android:enabled="true" 
+  />
+  <ZoomControls 
+	android:id="@+id/map_zoomcontrols"
+	android:layout_centerHorizontal="true"
+	android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    </ZoomControls>
+</RelativeLayout>
+
+</LinearLayout>

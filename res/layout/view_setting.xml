@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/logon_bg"
+    android:orientation="vertical"
+    android:id="@+id/view_setting" >
+
+    <include layout="@layout/header_setting" />
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="25dip"
+         >
+
+        <LinearLayout
+            android:id="@+id/layout_item_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_item_top_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_username_icon_bg"
+                android:layout_marginRight="10dip"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号："
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_setting_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_line_bg"
+                />
+        <LinearLayout
+            android:id="@+id/layout_item_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_item_center_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_email_icon_bg"
+                android:layout_marginRight="10dip"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email："
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_setting_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/email_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:visibility="gone"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+        <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_line_bg"
+                />
+        <LinearLayout
+            android:id="@+id/layout_item_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_item_bottom_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mobile_icon"
+                android:layout_marginRight="10dip"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机："
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_setting_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/mobile_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:visibility="gone"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/layout_item_changepsd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_item_top_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dip"
+            android:padding="10dip" >
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_changepsd_icon_bg"
+                android:layout_marginRight="10dip"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="修改密码"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/changepsd_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:visibility="gone"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+        <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_line_bg"
+                />
+        <LinearLayout
+            android:id="@+id/layout_item_changecity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_item_center_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_changecity_icon_bg"
+                android:layout_marginRight="10dip"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换当前城市："
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_setting_changecity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/light_black2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+        <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_line_bg"
+                />
+        
+        <LinearLayout
+            android:id="@+id/layout_item_advice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_item_center_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_advice_icon_bg"
+                android:layout_marginRight="10dip"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我有意见"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+        <ImageView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box_line_bg"
+                />
+        <LinearLayout
+            android:id="@+id/layout_item_version"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box_item_bottom_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/version_icon"
+                android:layout_marginRight="10dip"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="版本号："
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_setting_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/light_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:visibility="gone"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/btn_exit_logon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_exit_logon_bg"
+            />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
